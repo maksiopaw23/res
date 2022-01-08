@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em black;
+    margin-bottom: 10%;
+}
+
+p {
+    font-size: 30px;
+}
+
+
+h2,
+h3,
+.price {
+    text-align: center;
+}
+
+h2 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: -40px;
+}
+
+.sum {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+hr {
+    width: 60%;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+input {
+    background: none;
+    border: white;
+    color: white;
+}
+
+
+a.button2 {
+    display: flex;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+a.button2:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+    cursor: pointer;
+    background: hsla(0, 0%, 80%, .14);
+}
+
+a.button2:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width:30em) {
+    a.button2 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 70px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 30px;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-top: 90px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 40px;
+    color: white;
+}
+
+.rad-label {
+    display: flex;
+    align-items: center;
+
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+}
+
+.rad-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.rad-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+
+    background: linear-gradient(to right bottom, hsl(160, 6%, 82%), hsl(226, 9%, 29%));
+    position: relative;
+}
+
+.rad-design::before {
+    content: '';
+
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+    transform: scale(0);
+}
+
+.rad-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+
+    transition: .3s;
+}
+
+.rad-input:checked~.rad-text {
+    color: hsl(0, 0%, 40%);
+}

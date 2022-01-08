@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RES Design | Kosztorys projektu</title>
+</head>
+
+<body>
+    <div class="bg">
+        <p>
+            <h2>Res Design</h2>
+            <h3>Kosztorys projektu</h3>
+            <hr class="solid">
+
+            <div class="form__group field">
+                <input type="number" class="form__field" placeholder="m²" name="name" id='name' required />
+                <label for="name" class="form__label">Podaj wielkość mieszkania:</label>
+            </div>
+
+
+            <p>Wybierz rodzaj projektu:</p>
+            <div>
+
+                <label class="rad-label">
+                    <input type="radio" class="rad-input one" name="rad" checked>
+                    <div class="rad-design"></div>
+                    <div class="rad-text">Projekt z nadzorem</div>
+                </label>
+
+                <label class="rad-label">
+                    <input type="radio" class="rad-input two" name="rad">
+                    <div class="rad-design"></div>
+                    <div class="rad-text">Projekt bez nadzoru</div>
+                </label>
+
+            </div>
+
+            <p>Dodatkowe usługi:</p>
+
+            <div>
+
+                <label class="rad-label">
+                    <input type="checkbox" class="rad-input three" name="rad">
+                    <div class="rad-design" style="border-radius: 0;"></div>
+                    <div class="rad-text">Inwentaryzacja</div>
+                </label>
+
+                <label class="rad-label">
+                    <input type="checkbox" class="rad-input four" name="rad">
+                    <div class="rad-design" style="border-radius: 0;"></div>
+                    <div class="rad-text">Jednorazowa konsultacja</div>
+                </label>
+
+            </div>
+        </p>
+        <a class="button2">Oblicz</a>
+        <p class="price">Przyblizona cena projektu:</p>
+        <div class="sum">0 zł</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
